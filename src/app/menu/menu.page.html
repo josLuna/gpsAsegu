@@ -5,7 +5,9 @@
     </ion-buttons>
     <ion-title>{{ menu }}</ion-title>
     <ion-avatar slot="end">
-      <img alt="Silhouette of a person's head" src="https://cdn.computerhoy.com/sites/navi.axelspringer.es/public/media/image/2018/08/fotos-perfil-whatsapp_16.jpg?tf=3840x" />
+      <img style="margin-top: 7%;    width: 87%;
+      height: 87%;" alt="Silhouette of a person's head"
+        src="https://cdn.computerhoy.com/sites/navi.axelspringer.es/public/media/image/2018/08/fotos-perfil-whatsapp_16.jpg?tf=3840x" />
     </ion-avatar>
   </ion-toolbar>
 
@@ -13,17 +15,29 @@
 
 <ion-content [fullscreen]="true">
   <br>
-  <ion-header collapse="condense">
-    <ion-item>
-      <ion-toolbar>
-        <ion-title size="large">Tus seguros!!</ion-title>
-      </ion-toolbar>
-      <ion-icon slot="end" name="shield-checkmark-sharp"></ion-icon>
-    </ion-item>
-  </ion-header>
+  <ion-item>
+    <ion-toolbar>
+      <ion-title style="font-size: 26px;" size="large">Tus seguros!!</ion-title>
+    </ion-toolbar>
+    <ion-icon slot="end" name="shield-checkmark-sharp"></ion-icon>
+  </ion-item>
+  <ion-card style="border-radius: 0px 20px 0px 17px; background: #f6f6f6; padding: 0;">
+    <ion-card-content >
+      <ion-item style="--background: #f6f6f6;" button detail="true" detail-icon="caret-forward-outline">
+          <ion-img style="width: 18%;" src="https://ionic-docs-demo-v6.vercel.app/assets/madison.jpg"
+          alt="The Wisconsin State Capitol building in Madison, WI at night"></ion-img>
+      </ion-item>
 
-  <!-- <div id="container">
+    </ion-card-content>
+  </ion-card>
+
+  <div class="bar bar-foorer bar-balanced">
     <strong class="capitalize">{{ menu }}</strong>
 
-  </div> -->
+  </div>
 </ion-content>
+<ion-footer style="--background: #ff00004f;">
+  <ion-toolbar >
+    <ion-title> Footer </ion-title>
+  </ion-toolbar>
+</ion-footer>

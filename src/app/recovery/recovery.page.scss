@@ -1,0 +1,22 @@
+/* Centra todo el contenido vertical y horizontalmente */
+ion-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh; /* Esto establece la altura al 100% de la ventana */
+  }
+  
+  /* Estilo para el botón de enviar correo de recuperación */
+  ion-button {
+    width: 80%; /* Ancho del botón */
+  }
+  
+  /* Estilo para los párrafos de texto */
+  p {
+    text-align: center; /* Centra el texto en los párrafos */
+  }
+  
+  ion-avatar {
+    --border-radius: 4px;
+  }

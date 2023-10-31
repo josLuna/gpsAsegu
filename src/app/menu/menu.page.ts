@@ -1,5 +1,6 @@
 import { Component, OnInit,inject } from '@angular/core';
 import { ActivatedRoute } from '@angular/router';
+import { ServiceService } from '../services/service.service';
 @Component({
   selector: 'app-menu',
   templateUrl: './menu.page.html',
@@ -8,7 +9,10 @@ import { ActivatedRoute } from '@angular/router';
 export class MenuPage implements OnInit {
   public menu!: string;
   private activatedRoute = inject(ActivatedRoute);
-  constructor() { }
+  constructor(private ServiceService: ServiceService) {
+    this.ServiceService.hola()
+  }
+
 
   ngOnInit() {
     this.menu = this.activatedRoute.snapshot.paramMap.get('id') as string;

@@ -23,7 +23,19 @@ const routes: Routes = [
   {
     path: 'panel/:id',
     loadChildren: () => import('./panel/panel.module').then( m => m.PanelPageModule)
+  },  {
+    path: 'signup',
+    loadChildren: () => import('./signup/signup.module').then( m => m.SignupPageModule)
   },
+  {
+    path: 'landing',
+    loadChildren: () => import('./landing/landing.module').then( m => m.LandingPageModule)
+  },
+  {
+    path: 'reset-password',
+    loadChildren: () => import('./reset-password/reset-password.module').then( m => m.ResetPasswordPageModule)
+  },
+
 ];
 
 @NgModule({
